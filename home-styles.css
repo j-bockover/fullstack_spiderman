@@ -4,6 +4,10 @@ body {
   background-image: url("./spidermanswing.jfif");
 }
 
+.logo {
+  color: rgb(56, 223, 56);
+}
+
 nav {
   text-align: center;
   position: fixed;
