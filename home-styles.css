@@ -1,0 +1,45 @@
+/* This is css code for the navbar */
+body {
+  margin: 0px; /* removes gap between nav and top of page*/
+  background-image: url("./spidermanswing.jfif");
+}
+
+nav {
+  text-align: center;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  text-decoration: none;
+  background-image: url("./web.jpg");
+  background-blend-mode: lighten;
+  background-size: contain;
+  /* background-color: blue; */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(14, 180, 245);
+  padding-right: 40px;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: "THE AMAZING SPIDER-MAN", sans-serif;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li :hover {
+  color: yellow;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 30%;
+}
+
+/* CSS code for the spiderman cursor */
+/* Start https://www.cursors-4u.com */
+* {
+  cursor: url(https://cur.cursors-4u.net/toons/too-7/too682.cur), auto !important;
+} /* End https://www.cursors-4u.com */
