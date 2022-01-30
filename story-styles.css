@@ -1,10 +1,12 @@
+/* This is css code for the navbar */
 body {
   margin-top: 0px; /* removes gap between nav and top of page*/
-  background-image: url("./spidermanswing.jfif");
-  background-size: cover;
+  background-image: url("./spidermancomic.jpg");
+  background-size: 1600px 800px;
   background-repeat: no-repeat;
+  background-position: center top 60px;
 }
-/* This is css code for the navbar */
+
 .logo {
   color: #fff;
 }
@@ -15,9 +17,11 @@ nav {
   height: 80px;
   width: 100%;
   text-decoration: none;
+  /* background-image: url("./web.jpg"); */
   background-color: rgb(226, 9, 46);
   background-blend-mode: lighten;
   background-size: contain;
+  /* background-color: blue; */
 }
 
 a {
@@ -43,16 +47,17 @@ li :hover {
   text-decoration-thickness: 30%;
 }
 
-/* CSS code for the h1 section of the homepage */
-.homepageheader {
+/* CSS code for the h2 section of the homepage */
+.storyheader {
   display: block;
-  width: 200px;
+  width: 300px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-style: italic;
   font-size: 1.8em;
   text-align: center;
   padding-top: 100px;
-  color: yellow;
-  background-color: black;
+  color: black;
+  background-color: yellow;
 }
 /* CSS code for the spiderman cursor */
 /* Start https://www.cursors-4u.com */
