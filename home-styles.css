@@ -6,7 +6,8 @@ body {
 }
 /* This is css code for the navbar */
 .logo {
-  color: #fff;
+  color: rgb(0, 57, 95);
+  font-weight: bolder;
 }
 
 nav {
@@ -15,7 +16,7 @@ nav {
   height: 80px;
   width: 100%;
   text-decoration: none;
-  background-color: rgb(226, 9, 46);
+  background-image: url("/web.jpg");
   background-blend-mode: lighten;
   background-size: contain;
 }
@@ -37,7 +38,7 @@ li {
 }
 
 li :hover {
-  color: yellow;
+  color: rgb(21, 195, 226);
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-thickness: 30%;
@@ -51,7 +52,7 @@ li :hover {
   font-size: 1.8em;
   text-align: center;
   padding-top: 100px;
-  color: yellow;
+  color: rgb(0, 153, 255);
   background-color: black;
 }
 /* CSS code for the spiderman cursor */
