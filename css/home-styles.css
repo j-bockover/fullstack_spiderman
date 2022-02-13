@@ -1,0 +1,114 @@
+body {
+  margin-top: 0px; /* removes gap between nav and top of page*/
+  background-image: url("/img/spidermanswing.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* This is css code for the navbar */
+.logo {
+  color: rgb(0, 57, 95);
+  font-weight: bolder;
+}
+
+nav {
+  text-align: center;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  text-decoration: none;
+  background-image: url("/img/web.jpg");
+  background-blend-mode: lighten;
+  background-size: contain;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(25, 47, 209);
+  padding-right: 40px;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: "THE AMAZING SPIDER-MAN", sans-serif;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  margin: 0px;
+}
+
+li :hover {
+  color: rgb(21, 195, 226);
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 30%;
+}
+
+/* CSS code for the spiderman cursor */
+/* Start https://www.cursors-4u.com */
+* {
+  cursor: url(https://cur.cursors-4u.net/toons/too-7/too682.cur), auto !important;
+} /* End https://www.cursors-4u.com */
+
+.container {
+  display: flex;
+}
+
+.row1 {
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar-nav {
+  background-image: url("/img/web.jpg");
+  background-blend-mode: lighten;
+  background-size: contain;
+}
+
+.navbar-brand-md {
+  color: rgb(25, 47, 209);
+}
+
+.navbar-brand-md:hover {
+  color: rgb(21, 195, 226);
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 30%;
+}
+
+button.navbar-toggler {
+  background-image: url("/img/burgericon.jpg");
+  background-size: cover;
+}
+
+.navbar-toggler:focus {
+  background-image: url("img/burger_x_icon.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.static {
+  position: absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity: 0;
+}
+
+li.nav-item {
+  z-index: 9999;
+  background-image: url("/img/web.jpg");
+  background-size: contain;
+}
+
+a.nav-link:hover {
+  color: rgb(21, 195, 226);
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 30%;
+}
+
+.web:hover {
+  color: blue;
+}
