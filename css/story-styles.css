@@ -1,0 +1,25 @@
+.container {
+  display: block;
+}
+.row > * {
+  border: 1px solid white;
+  padding: 5px;
+  color: white;
+  font-size: 23m;
+  text-align: center;
+  height: 80px;
+}
+/* gif is 480 * 270 */
+.row1 > * {
+  width: 480px;
+  height: 270px;
+}
+
+.static {
+  position: absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity: 0;
+}
