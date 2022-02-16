@@ -20,7 +20,7 @@ nav {
   height: 80px;
   width: 100%;
   text-decoration: none;
-  background-image: url("../../spiderman-app/src/images/img/web.jpg");
+  background-image: url("../../spiderman-app/src/img/web.jpg");
   background-blend-mode: lighten;
   background-size: contain;
 }
@@ -69,20 +69,20 @@ li :hover {
 }
 /* For mobile hamburger menu */
 button.navbar-toggler {
-  background-image: url("../../spiderman-app/src/images/img/burgericon.jpg");
+  background-image: url("../../spiderman-app/src/img/burgericon.jpg");
   background-size: cover;
   opacity: 0.5;
 }
 
 .navbar-toggler:focus {
-  background-image: url("../../spiderman-app/src/images/img/burger_x_icon.jpg");
+  background-image: url("../../spiderman-app/src/img/burger_x_icon.jpg");
   background-size: cover;
   height: 100%;
 }
 
 li.nav-item {
   z-index: 9999;
-  background-image: url("../../spiderman-app/src/images/img/web.jpg");
+  background-image: url("../../spiderman-app/src/img/web.jpg");
   background-size: contain;
 }
 

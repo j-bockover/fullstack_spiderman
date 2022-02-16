@@ -1,11 +1,11 @@
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Image from "../images/img/spidermanswing.jfif";
-import Image2 from "../images/img/spideyaction.gif";
-import Image6 from "../images/img/cbbugle.jpg";
-import Image7 from "../images/img/cbchar.jpg";
-import Image8 from "../images/img/cbmedia.jpg";
-import Image9 from "../images/img/cborigins.jpg";
+import Image from "../img/spidermanswing.jfif";
+import Image2 from "../img/spideyaction.gif";
+import Image6 from "../img/cbbugle.jpg";
+import Image7 from "../img/cbchar.jpg";
+import Image8 from "../img/cbmedia.jpg";
+import Image9 from "../img/cborigins.jpg";
 import { Link } from "react-router-dom";
 
 import Navbar from "../components/navbar";

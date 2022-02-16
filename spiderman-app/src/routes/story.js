@@ -1,17 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
-import Image from "../images/img/Stan_steve.jpg";
-import Image2 from "../images/img/spiderman-bite.gif";
-import Image3 from "../images/img/spideywrestling.jpg";
-import Image4 from "../images/img/spideysuit.jpg";
-import Image5 from "../images/img/spideypowers.jpg";
-import Image6 from "../images/img/spideystrength.gif";
-import Image7 from "../images/img/spider-sense-thinking.gif";
-import Image8 from "../images/img/webshooters.gif";
-import Image9 from "../images/img/Spider-Tracer.jpg";
-import Image10 from "../images/img/spideyvillains.jpg";
-import Image11 from "../images/img/rightarrow1.jfif";
-import Image12 from "../images/img/downarrow1.jpg";
+import Image from "../img/Stan_steve.jpg";
+import Image2 from "../img/spiderman-bite.gif";
+import Image3 from "../img/spideywrestling.jpg";
+import Image4 from "../img/spideysuit.jpg";
+import Image5 from "../img/spideypowers.jpg";
+import Image6 from "../img/spideystrength.gif";
+import Image7 from "../img/spider-sense-thinking.gif";
+import Image8 from "../img/webshooters.gif";
+import Image9 from "../img/Spider-Tracer.jpg";
+import Image10 from "../img/spideyvillains.jpg";
+import Image11 from "../img/rightarrow1.jfif";
+import Image12 from "../img/downarrow1.jpg";
 
 import Navbar from "../components/navbar.js";
 
