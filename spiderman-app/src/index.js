@@ -4,12 +4,8 @@ import "./index.css";
 // import App from "./App";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./routes/home.js";
+import Home from "./routes/home";
 import Story from "./routes/story";
-// import Characters from "./routes/Characters";
-// import Spells from "./routes/Spells.js";
-// import Potions from "./routes/Potions.js";
-// import Credits from "./routes/Credits.js";
 
 const rootElement = document.getElementById("root");
 
