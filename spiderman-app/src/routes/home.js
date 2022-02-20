@@ -46,7 +46,7 @@ function home(props) {
           <h2 class="card-title text-center">For more information:</h2>
           <div class="container">
             <figure class="web">
-              <Link to="../story.js">
+              <Link to="../story">
                 <img
                   src={Image9}
                   style={{ width: `200px`, height: `200px` }}
@@ -58,7 +58,7 @@ function home(props) {
               </p>
             </figure>
             <figure class="web">
-              <Link to="../story.js">
+              <Link to="../characters">
                 <img
                   src={Image7}
                   style={{ width: `200px`, height: `200px` }}
@@ -71,7 +71,7 @@ function home(props) {
               </p>
             </figure>
             <figure class="web">
-              <Link to="../story.js">
+              <Link to="../media">
                 <img
                   src={Image8}
                   style={{ width: `200px`, height: `200px` }}
@@ -84,7 +84,7 @@ function home(props) {
               </p>
             </figure>
             <figure class="web">
-              <Link to="../story.js">
+              <Link to="../news">
                 <img
                   src={Image6}
                   style={{ width: `200px`, height: `200px` }}
