@@ -6,6 +6,7 @@ import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./routes/home";
 import Story from "./routes/story";
+import Media from "./routes/media";
 
 const rootElement = document.getElementById("root");
 
@@ -15,7 +16,7 @@ ReactDOM.render(
       <Route path="/" element={<Home />} />
       <Route path="story" element={<Story />} />
       {/* <Route path="characters" element={<Characters />} /> */}
-      {/* <Route path="media" element={<Media />} /> */}
+      <Route path="media" element={<Media />} />
       {/* <Route path="news" element={<News />} /> */}
       {/* <Route path="credits" element={<Credits />} /> */}
     </Routes>
