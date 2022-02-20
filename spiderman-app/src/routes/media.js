@@ -1,7 +1,7 @@
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+// import { Link } from "react-router-dom";
+// import { Container, Row, Col } from "react-bootstrap";
 import axios from "axios";
 
 import "../App.css";
@@ -20,24 +20,32 @@ class MovieList extends React.Component {
 
   render() {
     return (
-      <Container>
-        {this.state.moives.map((movie) => (
-          // <>
-          <Row className="show-grid">
-            <Col>
-              <div className="d-flex">
-                <img src={movie.image} width="auto" height="200px"></img>
+      <section
+        className="m-5 mt-0 p-4 pt-0"
+        style={{ backgroundColor: "aliceblue" }}
+      >
+        <h3 className="fw-bold ps-1">Movies</h3>
+        <div className="container p-0">
+          <div className="row">
+            {this.state.moives.map((movie) => (
+              <div className="col-sm-12 col-md-6 border-bottom mb-2 d-flex">
+                <img
+                  className="pt-1 pe-2"
+                  src={movie.image}
+                  width="auto"
+                  height="250px"
+                  alt={movie.title + "poster image"}
+                ></img>
                 <div>
-                  <h4>{movie.title}</h4>
+                  <h5>{movie.title}</h5>
                   <p>{movie.overview}</p>
                   <p>{movie.release_date}</p>
                 </div>
               </div>
-            </Col>
-          </Row>
-          // </>
-        ))}
-      </Container>
+            ))}
+          </div>
+        </div>
+      </section>
     );
   }
 }

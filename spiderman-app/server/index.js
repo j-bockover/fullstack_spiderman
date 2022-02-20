@@ -42,6 +42,10 @@ function getMovies() {
       .then((response) => {
         let { results } = response.data;
         results.forEach((result) => {
+          if (
+            new Date(result.release_date.split("-")) < new Date(2000 - 01 - 01)
+          )
+            return;
           let movie = {
             id: result.id,
             title: result.title,
@@ -59,7 +63,7 @@ function getMovies() {
           let b_date = new Date(b.release_date.split("-"));
           return b_date.getFullYear() - a_date.getFullYear();
         });
-        console.log(movie_list);
+        // console.log(movie_list);
       })
       .catch((error) => {
         console.error(error);
