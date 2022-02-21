@@ -1,9 +1,8 @@
 const express = require("express");
-const app = express();
-const port = 5001;
 const path = require("path");
 const axios = require("axios");
-const { json } = require("express");
+const app = express();
+const port = 5001;
 
 let movie_list = getMovies();
 let game_list = getGames();
@@ -15,10 +14,10 @@ app.get("/movies_api", (req, res) => {
 });
 
 app.get("/games_api", (req, res) => {
-  // console.log(game_list); // looks like this works but front-end can't grab data
-  // res.send(game_list);
+  console.log(game_list); // looks like this works but front-end can't grab data
+  res.send(game_list);
   // res.send({ data: "Hello from express server" }); // this works perfectly fine
-  res.send(getGames());
+  // res.send(getGames());
 });
 
 app.use((req, res, next) => {
