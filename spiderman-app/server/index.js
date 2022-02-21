@@ -6,11 +6,16 @@ const axios = require("axios");
 const { json } = require("express");
 
 let movie_list = getMovies();
+let game_list = getGames();
 
 app.use(express.static(path.join(__dirname, "..", "build")));
 
-app.get("/api", (req, res) => {
+app.get("/movies_api", (req, res) => {
   res.send(movie_list);
+});
+
+app.get("/games_api", (req, res) => {
+  res.send(game_list);
 });
 
 app.use((req, res, next) => {
@@ -42,10 +47,9 @@ function getMovies() {
       .then((response) => {
         let { results } = response.data;
         results.forEach((result) => {
-          if (
-            new Date(result.release_date.split("-")) < new Date(2000 - 01 - 01)
-          )
+          if (new Date(result.release_date) < new Date("2000-01-01")) {
             return;
+          }
           let movie = {
             id: result.id,
             title: result.title,
@@ -59,11 +63,10 @@ function getMovies() {
           movie_list.push(movie);
         });
         movie_list.sort((a, b) => {
-          let a_date = new Date(a.release_date.split("-"));
-          let b_date = new Date(b.release_date.split("-"));
-          return b_date.getFullYear() - a_date.getFullYear();
+          let a_date = new Date(a.release_date);
+          let b_date = new Date(b.release_date);
+          return b_date - a_date;
         });
-        // console.log(movie_list);
       })
       .catch((error) => {
         console.error(error);
@@ -125,4 +128,36 @@ function getMovies() {
   //   //   movie_crew,
   //   // };
   // };
+}
+
+async function getGames() {
+  let games_api_key = "f12cf57bf66c47298d34c831991a800e";
+  let game_list = [];
+  try {
+    let response = await axios.get(
+      `https://api.rawg.io/api/games?key=${games_api_key}&search=Spider-Man&ordering=-rating`
+    );
+
+    let {
+      data: { results },
+    } = response;
+
+    results.forEach((result) => {
+      let game = {
+        name: result.name,
+        rating: result.rating,
+        release_date: result.released,
+        last_update: result.updated,
+        platforms: [],
+        image: result.background_image,
+      };
+      result.platforms.forEach((platform) =>
+        game.platforms.push(platform.platform.name)
+      );
+      game_list.push(game);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+  return game_list;
 }

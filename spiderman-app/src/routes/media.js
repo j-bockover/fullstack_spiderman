@@ -1,7 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
-// import { Container, Row, Col } from "react-bootstrap";
 import axios from "axios";
 
 import "../App.css";
@@ -12,7 +10,7 @@ class MovieList extends React.Component {
   };
 
   componentDidMount() {
-    axios.get(`/api`).then((res) => {
+    axios.get(`/movies_api`).then((res) => {
       const moives = res.data;
       this.setState({ moives });
     });
@@ -24,17 +22,17 @@ class MovieList extends React.Component {
         className="m-5 mt-0 p-4 pt-0"
         style={{ backgroundColor: "aliceblue" }}
       >
-        <h3 className="fw-bold ps-1">Movies</h3>
-        <div className="container p-0">
+        <h3 className="fw-bold p-3 ps-0">Movies</h3>
+        <div className="container-fluid p-0">
           <div className="row">
             {this.state.moives.map((movie) => (
-              <div className="col-sm-12 col-md-6 border-bottom mb-2 d-flex">
+              <div className="col-md-12 col-lg-6 border-top mb-2 pt-2 d-flex">
                 <img
-                  className="pt-1 pe-2"
+                  className="p-2 ps-0 pt-0"
                   src={movie.image}
                   width="auto"
                   height="250px"
-                  alt={movie.title + "poster image"}
+                  alt={movie.title + " poster image"}
                 ></img>
                 <div>
                   <h5>{movie.title}</h5>
@@ -50,11 +48,37 @@ class MovieList extends React.Component {
   }
 }
 
+class GameList extends React.Component {
+  state = {
+    games: [],
+  };
+
+  componentDidMount() {
+    axios.get(`/games_api`).then((res) => {
+      const games = res.data;
+      console.log(games);
+      this.setState({ games });
+    });
+  }
+
+  render() {
+    return (
+      <section
+        className="m-5 mt-0 p-4 pt-0"
+        style={{ backgroundColor: "aliceblue" }}
+      >
+        <h3 className="fw-bold p-3 ps-0">Video Games</h3>
+      </section>
+    );
+  }
+}
+
 export default function Media(props) {
   return (
     <>
       <Navbar />
       <MovieList />
+      <GameList />
     </>
   );
 }
