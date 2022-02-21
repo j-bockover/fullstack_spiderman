@@ -56,7 +56,7 @@ class GameList extends React.Component {
   componentDidMount() {
     axios.get(`/games_api`).then((res) => {
       const games = res.data;
-      console.log(games);
+      console.log(res.data);
       this.setState({ games });
     });
   }

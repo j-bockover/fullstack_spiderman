@@ -15,7 +15,10 @@ app.get("/movies_api", (req, res) => {
 });
 
 app.get("/games_api", (req, res) => {
-  res.send(game_list);
+  // console.log(game_list); // looks like this works but front-end can't grab data
+  // res.send(game_list);
+  // res.send({ data: "Hello from express server" }); // this works perfectly fine
+  res.send(getGames());
 });
 
 app.use((req, res, next) => {
@@ -159,5 +162,6 @@ async function getGames() {
   } catch (error) {
     console.error(error);
   }
+  // console.log(game_list);
   return game_list;
 }
