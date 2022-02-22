@@ -21,17 +21,20 @@ nav {
   width: 100%;
   text-decoration: none;
   background-image: url("../src/img/web.jpg");
-  background-blend-mode: lighten;
+  /* background-blend-mode: lighten; */
   background-size: contain;
 }
 
 a {
   text-decoration: none;
   color: rgb(25, 47, 209);
-  padding-right: 40px;
+  padding-right: 30px;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.3em;
   font-family: "THE AMAZING SPIDER-MAN", sans-serif;
+  /* filter: brightness(300%); */
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
 }
 
 li {
@@ -41,31 +44,18 @@ li {
   margin: 0px;
 }
 
-li :hover {
-  color: rgb(21, 195, 226);
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: 30%;
-}
-
-.navbar-nav {
-  /* background-image: url("../src/images/img/web.jpg"); */
-  background-blend-mode: lighten;
-  background-size: contain;
-}
-
-.navbar-brand-md {
+a.logo {
+  padding-left: 40px;
+  font-size: 2.3em;
+  text-decoration: none;
   color: rgb(25, 47, 209);
   filter: brightness(300%);
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: black;
 }
 
-.navbar-brand-md:hover {
-  color: rgb(21, 195, 226);
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: 30%;
+.logo:hover {
+  color: black;
 }
 /* For mobile hamburger menu */
 button.navbar-toggler {
@@ -93,13 +83,19 @@ li.nav-item {
     background-image: url("../src/img/web.jpg");
     background-size: contain;
   }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 a.nav-link:hover {
-  color: rgb(21, 195, 226);
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: 30%;
+  color: black;
+}
+
+.container {
+  display: flex;
 }
 
 /* For the image and gif on homepage */
@@ -115,12 +111,12 @@ a.nav-link:hover {
 /* For organizing comics on bottom of homepage 
 and adding hover effect when hovered over */
 
-.web:hover {
-  color: blue;
+.web {
+  color: white;
 }
 
-.container {
-  display: flex;
+.web:hover {
+  color: red;
 }
 
 /* CSS code for the spiderman cursor */
@@ -128,3 +124,105 @@ and adding hover effect when hovered over */
 * {
   cursor: url(https://cur.cursors-4u.net/toons/too-7/too682.cur), auto !important;
 } /* End https://www.cursors-4u.com */
+
+/* For the news page  */
+
+/* CSS for the news ticker  */
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-heading {
+  position: absolute;
+  background: #f51e01;
+  display: block;
+  left: 0;
+  top: 0;
+  height: 2.5rem;
+  padding: 11px 40px;
+  z-index: 2;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.ticker-wrap .ticker__item:before {
+  content: "";
+  height: 11px;
+  width: 11px;
+  display: inline-block;
+  background-color: #1074bc;
+  border-radius: 100%;
+  position: relative;
+  margin-right: 15px;
+}
+.ticker-heading:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 11px solid #df1e05;
+  position: absolute;
+  margin-left: 40px;
+}
+.ticker-wrap {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 2.5rem;
+  background-color: #f9f9f9;
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+.ticker-wrap .ticker:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 180s;
+  animation-duration: 180s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 0.875rem;
+  color: #454545;
+  font-weight: bold;
+}
+
+/* CSS code for news page */

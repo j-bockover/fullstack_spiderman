@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 import "../App.css";
 import Image from "../img/Stan_steve.jpg";
 import Image2 from "../img/spiderman-bite.gif";
@@ -22,43 +23,46 @@ function story(props) {
       <div
         class="card d-inline-block w-100 text-center"
         style={{
-          width: `800px`,
-          height: `600px`,
-          marginTop: `-20px`,
-          //   backgroundColor: `green`,
+          width: `900px`,
+          height: `auto`,
+          marginTop: `-30px`,
+          backgroundColor: `#03254c`,
         }}
       >
         <div class="card-body">
-          <h1 class="card-title">
+          <h1 class="card-title" style={{ color: `white` }}>
             This is the story of the Amazing Spider-Man!
           </h1>
-          <div class="panel-container">
+          <div class="panel-container" style={{ display: `inline-block` }}>
             <div class="row">
-              <figure class="col-4">
+              <figure class="col-4 col-sm-12 col-md-4 col-lg-4">
                 <img
                   src={Image}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="Spiderman creators Stan Lee and Steve Ditko"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   The character of Spider-Man was created by Stan Lee and Steve
                   Ditko back in 1962
                 </p>
               </figure>
-              <figure class="col-4">
+              <div class="col-4">
                 <img
                   src={Image11}
-                  style={{ width: `200px`, height: `100px` }}
+                  class="img-fluid"
+                  // style={{ width: `200px`, height: `100px` }}
                   alt="Right Arrow Indicator"
                 />
-              </figure>
-              <figure class="col-4">
+              </div>
+              <div class="col-4  col-4 col-sm-12 col-md-4 col-lg-4">
                 <img
                   src={Image2}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="Peter Parker being bit by radioactive spider"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   High school student and child prodigy Peter Parker submerged
                   himself in his passion for science to avoid the taunts and
                   threats of his fellow classmates and stumbled into a world
@@ -68,25 +72,27 @@ function story(props) {
                   particle beam and felt immediately ill from it, little
                   realizing how much his life would change in the coming hours.
                 </p>
-              </figure>
+              </div>
             </div>
-            <div class="row">
-              <figure class="col-12">
+            <div class="row" style={{ backgroundColor: `#03254c` }} s>
+              <div class="col-12">
                 <img
                   src={Image12}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="down arrow indicator"
                 />
-              </figure>
+              </div>
             </div>
-            <div class="row">
-              <figure class="col-4">
+            <div class="row" style={{ backgroundColor: `#03254c` }}>
+              <div class="col-4">
                 <img
                   src={Image3}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="Peter Parker using his newfound powers"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   On the way home, the teenager unconsciously avoided a wayward
                   automobile by making an incredible leap to the wall of a
                   nearby building, finding himself miraculously able to stick to
@@ -97,21 +103,23 @@ function story(props) {
                   wresting competition and, wearing a mask to hide his identity,
                   easily bested the reigning champion.
                 </p>
-              </figure>
-              <figure class="col-4">
+              </div>
+              <div class="col-4">
                 <img
                   src={Image11}
-                  style={{ width: `200px`, height: `100px` }}
+                  class="img-fluid"
+                  // style={{ width: `200px`, height: `100px` }}
                   alt="Right Arrow Indicator"
                 />
-              </figure>
-              <figure class="col-4">
+              </div>
+              <div class="col-4">
                 <img
                   src={Image4}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="The Spiderman suit"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   Parker, an orphan, lived with his kindly Aunt May and Uncle
                   Ben and was wary of exposing them to the public scrutiny that
                   would surely ensue if he revealed his powers to the world, so
@@ -124,25 +132,27 @@ function story(props) {
                   classmates, the young man grew cold to everything but his
                   media-darling career.
                 </p>
-              </figure>
+              </div>
             </div>
-            <div class="row">
-              <figure class="col-12">
+            <div class="row" style={{ backgroundColor: `#03254c` }}>
+              <div class="col-12">
                 <img
                   src={Image12}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="down arrow indicator"
                 />
-              </figure>
+              </div>
             </div>
-            <div class="row">
-              <figure class="col-4">
+            <div class="row" style={{ backgroundColor: `#03254c` }}>
+              <div class="col-4">
                 <img
                   src={Image5}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="Peter becoming Spider-Man"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   Everything changed when, in an act of selfishness, Parker
                   allowed a burglar to escape police arrest during a Spider-Man
                   appearance rather than intervene. Later, when he returned
@@ -154,21 +164,23 @@ function story(props) {
                   his media star persona and spun his web solely to capture
                   criminals of all kinds.
                 </p>
-              </figure>
-              <figure class="col-4">
+              </div>
+              <div class="col-4">
                 <img
                   src={Image11}
-                  style={{ width: `200px`, height: `100px` }}
+                  class="img-fluid"
+                  // style={{ width: `200px`, height: `100px` }}
                   alt="Right Arrow Indicator"
                 />
-              </figure>
-              <figure class="col-4">
+              </div>
+              <div class="col-4">
                 <img
                   src={Image6}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="Spider-Man strength gif"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   Like his namesake, Spider-Man’s strength and agility stand far
                   above those of the average human, allowing him to lift nearly
                   ten tons and to leap and move at incredible speeds with high
@@ -176,25 +188,27 @@ function story(props) {
                   though he is not completely immune to viruses and other human
                   ailments.
                 </p>
-              </figure>
+              </div>
             </div>
-            <div class="row">
-              <figure class="col-12">
+            <div class="row" style={{ backgroundColor: `#03254c` }}>
+              <div class="col-12">
                 <img
                   src={Image12}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="down arrow indicator"
                 />
-              </figure>
+              </div>
             </div>
-            <div class="row">
-              <figure class="col-4">
+            <div class="row" style={{ backgroundColor: `#03254c` }}>
+              <div class="col-4">
                 <img
                   src={Image7}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="Spider-Man's spider-sense"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   An inner “spider-sense” allows him a high degree of awareness
                   to impending danger and to gauge not only its level of threat
                   to him personally, but also the general direction of its
@@ -202,21 +216,23 @@ function story(props) {
                   Spider-Man an edge in his battles that often times defies
                   logic.
                 </p>
-              </figure>
-              <figure class="col-4">
+              </div>
+              <div class="col-4">
                 <img
                   src={Image11}
-                  style={{ width: `200px`, height: `100px` }}
+                  class="img-fluid"
+                  // style={{ width: `200px`, height: `100px` }}
                   alt="Right Arrow Indicator"
                 />
-              </figure>
-              <figure class="col-4">
+              </div>
+              <div class="col-4">
                 <img
                   src={Image8}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="Spider-Man's web-shooters"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   Spider-Man has designed and built many devices to aid him in
                   his crime fighting, but the stand-out invention among these
                   are his web-shooters. Strapped to both his wrists and
@@ -229,50 +245,54 @@ function story(props) {
                   hold several persons for nearly two hours, after which, the
                   webbing begins to dissolve.
                 </p>
-              </figure>
+              </div>
             </div>
-            <div class="row">
-              <figure class="col-12">
+            <div class="row" style={{ backgroundColor: `#03254c` }}>
+              <div class="col-12">
                 <img
                   src={Image12}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="down arrow indicator"
                 />
-              </figure>
+              </div>
             </div>
-            <div class="row">
-              <figure class="col-4">
+            <div class="row" style={{ backgroundColor: `#03254c` }}>
+              <div class="col-4">
                 <img
                   src={Image9}
-                  style={{ width: `400px`, height: `300px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `300px` }}
                   alt="Spider-Man's Spider Tracers"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   In addition, Spider-Man carries small “spider tracers” that
                   once placed upon a person or object transmit a specialized
                   signal the hero may identify with his spider-sense and thus
                   allow him to track to its origin point.
                 </p>
-              </figure>
-              <figure class="col-4">
+              </div>
+              <div class="col-4">
                 <img
                   src={Image11}
-                  style={{ width: `200px`, height: `100px` }}
+                  class="img-fluid"
+                  // style={{ width: `200px`, height: `100px` }}
                   alt="Right Arrow Indicator"
                 />
-              </figure>
-              <figure class="col-4">
+              </div>
+              <div class="col-4">
                 <img
                   src={Image10}
-                  style={{ width: `400px`, height: `500px` }}
+                  class="img-fluid"
+                  // style={{ width: `400px`, height: `500px` }}
                   alt="Spider-Man fighting villains"
                 />
-                <p style={{ fontWeight: `bold` }}>
+                <p style={{ fontWeight: `bold`, color: `white` }}>
                   With one of the most extensive and vile rogues gallery of any
                   super hero, Spider-Man uses his mighty powers to take on a
                   collection of the world’s wickedest villains.
                 </p>
-              </figure>
+              </div>
             </div>
           </div>
         </div>

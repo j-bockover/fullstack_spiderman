@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav class="navbar navbar-expand-md bg-dark mb-4">
       <div class="container-fluid">
-        <a class="navbar-brand-md" href="../">
+        <a class="logo" href="../">
           SPIDER-MAN
         </a>
         <button
@@ -21,7 +21,7 @@ export default function Navbar() {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link" href="../story">
                 STORY

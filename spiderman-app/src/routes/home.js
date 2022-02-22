@@ -17,21 +17,33 @@ function home(props) {
       <Navbar />
       <div
         class="card d-inline-block w-100 text-center"
-        style={{ width: `800px`, height: `500px`, marginTop: `-20px` }}
+        style={{
+          width: `800px`,
+          height: `auto`,
+          marginTop: `-30px`,
+          backgroundColor: `#03254c`,
+        }}
       >
         <div class="card-body">
-          <h1 class="card-title">Welcome to the Spider-Man Universe!</h1>
+          <h1
+            class="card-title"
+            style={{
+              color: `white`,
+            }}
+          >
+            Welcome to the Spider-Man Universe!
+          </h1>
           <ul>
             <li>
               <figure>
                 <img
-                  class="static"
+                  class="static img-fluid"
                   src={Image}
                   style={{ width: `720px`, height: `480px` }}
                   alt="Spiderman at night"
                 />
                 <img
-                  class="active"
+                  class="active img-fluid"
                   src={Image2}
                   style={{ width: `720px`, height: `480px` }}
                   alt="Spiderman fighting electro"
@@ -39,11 +51,9 @@ function home(props) {
               </figure>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="card d-inline-block w-100">
-        <div class="card-body">
-          <h2 class="card-title text-center">For more information:</h2>
+          <h2 class="card-title text-center" style={{ color: `white` }}>
+            For more information:
+          </h2>
           <div class="container">
             <figure class="web">
               <Link to="../story">
