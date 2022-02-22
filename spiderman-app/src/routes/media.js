@@ -35,7 +35,7 @@ function MovieList() {
               <div>
                 <h5>{movie.title}</h5>
                 <p>{movie.overview}</p>
-                <p>{movie.release_date}</p>
+                <p className="fw-bold">Release date: {movie.release_date}</p>
               </div>
             </div>
           ))}
@@ -71,7 +71,7 @@ function GameList() {
                 width="250px"
                 height="250px"
                 alt={game.name + " cover image"}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "fill" }}
               ></img>
               <div>
                 <h5>{game.name}</h5>
