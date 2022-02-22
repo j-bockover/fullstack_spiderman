@@ -26,10 +26,10 @@ function MovieList() {
           {movies.map((movie) => (
             <div className="col-md-12 col-lg-6 border-top mb-2 pt-2 d-flex">
               <img
-                className="p-2 ps-0 pt-0"
+                className="ps-0 pt-0 pe-3 pb-2"
                 src={movie.image}
                 width="auto"
-                height="250px"
+                height="300px"
                 alt={movie.title + " poster image"}
               ></img>
               <div>
@@ -49,8 +49,10 @@ function GameList() {
   const [games, setGames] = useState([]);
 
   useEffect(async () => {
-    let response = await axios.get("games_api");
-    console.log("Client says: here's data from server: ", response.data);
+    let response = await axios.get("/games_api");
+    let all_games = response.data;
+    setGames(all_games);
+    // console.log("Client says: here's data from server: ", response.data);
   }, []);
 
   return (
@@ -59,6 +61,31 @@ function GameList() {
       style={{ backgroundColor: "aliceblue" }}
     >
       <h3 className="fw-bold p-3 ps-0">Video Games</h3>
+      <div className="container-fluid p-0">
+        <div className="row">
+          {games.map((game) => (
+            <div className="col-md-12 col-lg-6 border-top mb-2 pt-2 d-flex">
+              <img
+                className="ps-0 pt-0 pe-3 pb-2"
+                src={game.image}
+                width="250px"
+                height="250px"
+                alt={game.name + " cover image"}
+                style={{ objectFit: "cover" }}
+              ></img>
+              <div>
+                <h5>{game.name}</h5>
+                <p>Last update: {game.last_update.split("T")[0]}</p>
+                <p>Release date: {game.release_date}</p>
+                <p>Game rating: {game.rating} / 5</p>
+                <p>
+                  Platforms: {game.platforms.map((platform) => platform + " ")}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

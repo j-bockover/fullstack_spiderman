@@ -4,20 +4,24 @@ const axios = require("axios");
 const app = express();
 const port = 5001;
 
-let movie_list = getMovies();
-let game_list = getGames();
+// let game_list = getGames();
 
 app.use(express.static(path.join(__dirname, "..", "build")));
 
+let movie_list = getMovies();
 app.get("/movies_api", (req, res) => {
   res.send(movie_list);
 });
 
 app.get("/games_api", (req, res) => {
-  console.log(game_list); // looks like this works but front-end can't grab data
-  res.send(game_list);
+  // console.log(typeof game_list); // looks like this works but front-end can't grab data
+  const callApi = async () => {
+    let game_list = await getGames();
+    // console.log(game_list);
+    res.send(game_list);
+  };
+  callApi();
   // res.send({ data: "Hello from express server" }); // this works perfectly fine
-  // res.send(getGames());
 });
 
 app.use((req, res, next) => {
@@ -133,12 +137,11 @@ function getMovies() {
 }
 
 async function getGames() {
-  let games_api_key = "f12cf57bf66c47298d34c831991a800e";
+  let games_api_key = "60490705ca5f4915ab5a5379874dda0b";
+  let api_url = `https://api.rawg.io/api/games?key=${games_api_key}&search=spider-man&search_exact=true&ordering=-rating`;
   let game_list = [];
   try {
-    let response = await axios.get(
-      `https://api.rawg.io/api/games?key=${games_api_key}&search=Spider-Man&ordering=-rating`
-    );
+    let response = await axios.get(api_url);
 
     let {
       data: { results },
@@ -158,9 +161,9 @@ async function getGames() {
       );
       game_list.push(game);
     });
+    // console.log(game_list);
   } catch (error) {
-    console.error(error);
+    console.error(error, typeof games_api_key);
   }
-  // console.log(game_list);
   return game_list;
 }
