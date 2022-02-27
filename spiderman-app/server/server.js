@@ -1,27 +1,31 @@
 const express = require("express");
 const path = require("path");
 const axios = require("axios");
+const md5 = require("md5");
 const app = express();
-const port = 5001;
+require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
 
-// let game_list = getGames();
+const port = process.env.PORT || 5001;
+const marvel_private_api_key = process.env.MARVEL_PRIVATE_API_KEY;
+const marvel_public_api_key = process.env.MARVEL_PUBLIC_API_KEY;
+const games_api_key = process.env.GAMES_API_KEY;
+const movie_api_key = process.env.MOVIE_API_KEY;
 
 app.use(express.static(path.join(__dirname, "..", "build")));
 
-let movie_list = getMovies();
-app.get("/movies_api", (req, res) => {
+app.get("/movies_api", async (req, res) => {
+  let movie_list = await getMovies();
   res.send(movie_list);
 });
 
-app.get("/games_api", (req, res) => {
-  // console.log(typeof game_list); // looks like this works but front-end can't grab data
-  const callApi = async () => {
-    let game_list = await getGames();
-    // console.log(game_list);
-    res.send(game_list);
-  };
-  callApi();
-  // res.send({ data: "Hello from express server" }); // this works perfectly fine
+app.get("/games_api", async (req, res) => {
+  let game_list = await getGames();
+  res.send(game_list);
+});
+
+app.get("/comics_api", async (req, res) => {
+  let comic_list = await getComics();
+  res.send(comic_list);
 });
 
 app.use((req, res, next) => {
@@ -32,112 +36,47 @@ app.listen(port, () => {
   console.log(`Server listening on port ${port}...`);
 });
 
-function getMovies() {
-  let movie_api_key = "5941d4436aff4a93f3f11e86cb336bec";
+async function getMovies() {
   let movie_images_config;
   let movie_list = [];
-  axios
-    .get(`https://api.themoviedb.org/3/configuration?api_key=${movie_api_key}`)
-    .then((response) => {
-      movie_images_config = { ...response.data.images };
-      getMovieData();
-    })
-    .catch((error) => {
-      console.error(error);
+  let config_url = `https://api.themoviedb.org/3/configuration?api_key=${movie_api_key}`;
+  let movie_url = `https://api.themoviedb.org/3/search/movie?api_key=${movie_api_key}&query=Spider-Man`;
+
+  try {
+    let configs = await axios.get(config_url);
+    movie_images_config = { ...configs.data.images };
+
+    let response = await axios.get(movie_url);
+    let { results } = response.data;
+    results.forEach((result) => {
+      if (new Date(result.release_date) < new Date("2000-01-01")) {
+        return;
+      }
+      let movie = {
+        id: result.id,
+        title: result.title,
+        overview: result.overview,
+        release_date: result.release_date,
+        image:
+          movie_images_config.secure_base_url +
+          movie_images_config.poster_sizes[3] +
+          result.poster_path,
+      };
+      movie_list.push(movie);
     });
-  const getMovieData = () => {
-    axios
-      .get(
-        `https://api.themoviedb.org/3/search/movie?api_key=${movie_api_key}&query=Spider-Man`
-      )
-      .then((response) => {
-        let { results } = response.data;
-        results.forEach((result) => {
-          if (new Date(result.release_date) < new Date("2000-01-01")) {
-            return;
-          }
-          let movie = {
-            id: result.id,
-            title: result.title,
-            overview: result.overview,
-            release_date: result.release_date,
-            image:
-              movie_images_config.secure_base_url +
-              movie_images_config.poster_sizes[3] +
-              result.poster_path,
-          };
-          movie_list.push(movie);
-        });
-        movie_list.sort((a, b) => {
-          let a_date = new Date(a.release_date);
-          let b_date = new Date(b.release_date);
-          return b_date - a_date;
-        });
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-    return;
-  };
+    movie_list.sort((a, b) => {
+      let a_date = new Date(a.release_date);
+      let b_date = new Date(b.release_date);
+      return b_date - a_date;
+    });
+  } catch (error) {
+    console.error(error);
+  }
 
   return movie_list;
-  // const getCastCrew = (movie_id) => {
-  //   // let movie_cast = [];
-  //   let movie_crew_deep = [];
-  //   axios
-  //     .get(
-  //       `https://api.themoviedb.org/3//movie/${movie_id}/credits?api_key=${movie_api_key}`
-  //     )
-  //     .then((response) => {
-  //       let { cast, crew } = response.data;
-  //       // movie_cast = cast.slice(0, 10).map((c) => {
-  //       //   return {
-  //       //     id: c.id,
-  //       //     name: c.name,
-  //       //     character: c.character,
-  //       //     profile_path: c.profile_path,
-  //       //     order: c.order,
-  //       //   };
-  //       // });
-  //       // console.log(movie_cast);
-  //       // let movie_crew_shallow = crew
-  //       //   .filter((c) => c.job === "Director" || c.job === "Executive Producer")
-  //       //   .map((c) => {
-  //       //     return {
-  //       //       id: c.id,
-  //       //       name: c.name,
-  //       //       job: c.job,
-  //       //     };
-  //       //   });
-  //       crew.forEach((crew_member) => {
-  //         if (
-  //           crew_member.job === "Director" ||
-  //           crew_member.job === "Executive Producer"
-  //         ) {
-  //           let member = {
-  //             id: crew_member.id,
-  //             name: crew_member.name,
-  //             job: crew_member.job,
-  //           };
-  //           movie_crew_deep.push(member);
-  //         }
-  //       });
-  //       // console.log(movie_crew_deep);
-  //       return movie_crew_deep;
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  //   console.log(movie_crew_deep);
-  //   // return {
-  //   //   movie_cast,
-  //   //   movie_crew,
-  //   // };
-  // };
 }
 
 async function getGames() {
-  let games_api_key = "60490705ca5f4915ab5a5379874dda0b";
   let api_url = `https://api.rawg.io/api/games?key=${games_api_key}&search=spider-man&search_exact=true&ordering=-rating`;
   let game_list = [];
   try {
@@ -161,9 +100,47 @@ async function getGames() {
       );
       game_list.push(game);
     });
-    // console.log(game_list);
   } catch (error) {
     console.error(error, typeof games_api_key);
   }
+
   return game_list;
+}
+
+async function getComics() {
+  let timestamp = `${new Date()}`;
+  let hash = md5(timestamp + marvel_private_api_key + marvel_public_api_key);
+  let comic_list = [];
+
+  let api_url = `http://gateway.marvel.com/v1/public/comics?characters=1009610&limit=50&ts=${timestamp}&apikey=${marvel_public_api_key}&hash=${hash}`; // found Spider-Man (Peter Parker) id = 1009610
+
+  try {
+    let response = await axios.get(api_url);
+
+    let {
+      data: { results },
+    } = response.data;
+
+    let withISBN = results.filter((result) => result.isbn != "");
+
+    withISBN.forEach((result) => {
+      let comic = {
+        name: result.title,
+        isbn: result.isbn,
+        pageCount: result.pageCount,
+        creators: [],
+        image: result.thumbnail.path + "." + result.thumbnail.extension,
+      };
+      result.creators.items
+        .filter((creator) => creator.role === "writer")
+        .forEach((creator) =>
+          comic.creators.push(creator.name + " - " + creator.role)
+        );
+      comic_list.push(comic);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+
+  return comic_list;
 }

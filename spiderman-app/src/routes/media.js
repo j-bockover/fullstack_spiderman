@@ -11,7 +11,7 @@ function MovieList() {
   useEffect(async () => {
     let response = await axios.get("/movies_api");
     let all_movies = response.data;
-    console.log(response.data);
+    // console.log(response.data);
     setMovies(all_movies);
   }, []);
 
@@ -34,6 +34,7 @@ function MovieList() {
               ></img>
               <div>
                 <h5>{movie.title}</h5>
+                <br />
                 <p>{movie.overview}</p>
                 <p className="fw-bold">Release date: {movie.release_date}</p>
               </div>
@@ -75,11 +76,56 @@ function GameList() {
               ></img>
               <div>
                 <h5>{game.name}</h5>
+                <br />
                 <p>Last update: {game.last_update.split("T")[0]}</p>
                 <p>Release date: {game.release_date}</p>
                 <p>Game rating: {game.rating} / 5</p>
                 <p>
-                  Platforms: {game.platforms.map((platform) => platform + " ")}
+                  Platforms: {game.platforms.map((platform) => platform + ", ")}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ComicList() {
+  const [comics, setComics] = useState([]);
+  useEffect(async () => {
+    let response = await axios.get("/comics_api");
+    let all_comics = response.data;
+    setComics(all_comics);
+    // console.log("Client says: here's data from server: ", response.data);
+  }, []);
+
+  return (
+    <section
+      className="m-5 mt-0 p-4 pt-0"
+      style={{ backgroundColor: "aliceblue" }}
+    >
+      <h3 className="fw-bold p-3 ps-0">Comic Books</h3>
+      <div className="container-fluid p-0">
+        <div className="row">
+          {comics.map((comic) => (
+            <div className="col-md-12 col-lg-6 border-top mb-2 pt-2 d-flex">
+              <img
+                className="ps-0 pt-0 pe-3 pb-2"
+                src={comic.image}
+                width="200px"
+                height="300px"
+                alt={comic.name + " cover image"}
+                style={{ objectFit: "fill" }}
+              ></img>
+              <div>
+                <h5>{comic.name}</h5>
+                <br />
+                <p>ISBN #: {comic.isbn ? comic.isbn : "None"}</p>
+                <p>Page Count: {comic.pageCount}</p>
+                <p>
+                  Creators: {comic.creators.map((creator) => creator + ", ")}
                 </p>
               </div>
             </div>
@@ -96,6 +142,7 @@ export default function Media() {
       <Navbar />
       <MovieList />
       <GameList />
+      <ComicList />
     </div>
   );
 }
