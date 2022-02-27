@@ -92,7 +92,7 @@ function GameList() {
 
 export default function Media() {
   return (
-    <div style={{ backgroundColor: "#03254c" }}>
+    <div style={{ backgroundColor: "#03254c", paddingBottom: "20px" }}>
       <Navbar />
       <MovieList />
       <GameList />
