@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "devstart": "nodemon index.js"
+    "run-client": "cd .. && npm run build",
+    "start": "(npm run run-client) && node server.js",
+    "devstart": "(npm run run-client) && nodemon server.js"
   },
   "keywords": [],
   "author": "",
