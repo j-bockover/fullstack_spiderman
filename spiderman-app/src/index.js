@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./routes/home";
 import Story from "./routes/story";
 import Media from "./routes/media";
+import Characters from "./routes/characters";
 import News from "./routes/news";
 import Credits from "./routes/credits";
 
@@ -17,7 +18,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="story" element={<Story />} />
-      {/* <Route path="characters" element={<Characters />} /> */}
+      <Route path="characters" element={<Characters />} />
       <Route path="media" element={<Media />} />
       <Route path="news" element={<News />} />
       <Route path="credits" element={<Credits />} />

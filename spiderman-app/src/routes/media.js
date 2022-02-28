@@ -11,7 +11,6 @@ function MovieList() {
   useEffect(async () => {
     let response = await axios.get("/movies_api");
     let all_movies = response.data;
-    // console.log(response.data);
     setMovies(all_movies);
   }, []);
 
@@ -53,7 +52,6 @@ function GameList() {
     let response = await axios.get("/games_api");
     let all_games = response.data;
     setGames(all_games);
-    // console.log("Client says: here's data from server: ", response.data);
   }, []);
 
   return (
@@ -98,7 +96,6 @@ function ComicList() {
     let response = await axios.get("/comics_api");
     let all_comics = response.data;
     setComics(all_comics);
-    // console.log("Client says: here's data from server: ", response.data);
   }, []);
 
   return (

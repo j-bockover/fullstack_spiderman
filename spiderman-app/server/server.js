@@ -28,6 +28,12 @@ app.get("/comics_api", async (req, res) => {
   res.send(comic_list);
 });
 
+app.get("/characters_api", (req, res) => {
+  // res.sendFile(path.join(__dirname, "characters.json"));
+  let character_list = getCharacters();
+  res.send(character_list);
+});
+
 app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "..", "build", "index.html"));
 });
@@ -101,7 +107,7 @@ async function getGames() {
       game_list.push(game);
     });
   } catch (error) {
-    console.error(error, typeof games_api_key);
+    console.error(error);
   }
 
   return game_list;
@@ -144,3 +150,22 @@ async function getComics() {
 
   return comic_list;
 }
+
+const all_characters = require("./characters.json");
+
+// console.log(all_characters);
+// console.log(path.join(__dirname, "images", "characters.json"));
+function getCharacters() {
+  character_list = [];
+  all_characters.forEach((c) => {
+    let character = {
+      name: c.name,
+      description: c.description,
+      image: c.image,
+      source: c.source,
+    };
+    character_list.push(character);
+  });
+  return character_list;
+}
+// console.log(getCharacters());

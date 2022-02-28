@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Peter Parker",
+        "description": "Peter Benjamin Parker is a fictional character primarily portrayed by Tom Holland in the Marvel Cinematic Universe (MCU) media franchise—based on the Marvel Comics character of the same name. Parker is initially depicted as a high school student at Midtown School of Science and Technology who received spider-like and superhuman abilities after being bitten by a radioactive spider and operates as a vigilante in New York City known as Spider-Man. Parker is recruited by Tony Stark, who goes on to mentor him and inducts him into the Avengers during the battle against Thanos. Following the Blip, Parker briefly becomes Stark's chosen successor until his secret identity becomes public, and the events that transpire after he enlists Stephen Strange's help to reverse this causes the multiverse to open. Strange and Parker eventually resolve the crisis by casting a new spell that permanently erases the world's shared knowledge of his civilian persona, including the bonds he once shared with his loved ones, friends, and other superhero allies.",
+        "image": "images/spider-man.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "May Parker",
+        "description": "May Parker, commonly known as Aunt May, is the aunt of Peter Parker and widow of Ben Parker. Unlike previous incarnations, she finds out that Peter is Spider-Man, when she walks in on him wearing the suit. She falls victim to the Blip in 2018, but is revived to life in 2023 and attends Tony Stark's funeral. Afterwards, she begins a relationship with Happy Hogan. Upon the arrival of villains from alternate realities in their universe, May houses the displaced Norman Osborn inside the F.E.A.S.T. shelter where she works. When Osborn rebels against her nephew's attempts to cure him of his Green Goblin persona and stages an uprising within Happy's apartment, May is mortally wounded by a combination of crushed debris from the remnants of the shelter, and the impact of Osborn's Goblin Grenade. She provides final words of wisdom—\"With great power, there must also come great responsibility\"—to the distraught Peter before quietly passing away leaving both Peter and Happy, who is arrested, devastated. Peter later tries to avenge her death by attempting to murder Green Goblin but is stopped by his alternate universe counterpart who intervenes, instead curing Osborn and the other villains and sending them back, eventually doing what May would have wanted.",
+        "image": "https://en.wikipedia.org/wiki/Aunt_May#/media/File:Aunt_May_Marvel_Comics.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Ben Parker",
+        "description": "Peter Parker's uncle that raised him along with May Parker in their Forest Hills home. when his parents died in a plane crash when they were young. Peter, while competing in a wrestling competition, allowed a burglar (later revealed to be Walter Hardy) to escape as revenge against Sullivan Edwards for not paying him the prize money. The burglar broke into their home and ended up shooting and killing Ben and stealing his car. Later during his career as the superhero Spider-Man, Peter used the memory of Ben to help him get rid of the symbiote.",
+        "image": "https://en.wikipedia.org/wiki/Uncle_Ben#/media/File:Uncle_Ben.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Mary Jane Watson",
+        "description": "MJ Watson is the niece of Anna Watson. She attends the Fall Formal as Peter Parker's date before ultimately switching schools to be at Midtown. Mary Jane befriends Peter and Gwen Stacy, and is initially determined to stay single, desiring to be a \"free agent\". Vanessa Marshall states \"I always make sure my choices for Mary Jane are that of an independent thinker, that she's not concerned with what the people around her think, which is an uncommon trait in teenage girls, there's a distinct confidence about her that I try to emulate\". She also explained about the character she played \"Mary Jane's character is incredibly complex, Her strength plays a major part in Peter’s growth and maturation she really keeps him on the straight and narrow. Even though our characters are still only in high school during this cartoon, and you're not going to get a lot of that character development at this point of the series, I know it's going to be there in the future and so that has an effect on how I play her now\".",
+        "image": "https://en.wikipedia.org/wiki/Mary_Jane_Watson#/media/File:Mary_Jane_Watson_(circa_2007).png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Gwen Stacy",
+        "description": "Gwen is the daughter of police captain George Stacy, and is one of Peter Parker's best friends and intellectual equal; they are both recommended by their teacher to work in the lab of Doctor Connors. Although initially strong willed, kind, harboring deep feelings for her best friend Peter and unconcerned with her appearance, she gradually evolves into a more confident and attractive character more closely resembling and truly faithful to her comic book counterpart. She is always supportive of Peter, and also shows well-meaning concern for Harry Osborn. Although she is Peter's best friend, her weakness is that she has a colossal crush on Peter.",
+        "image": "https://en.wikipedia.org/wiki/Gwen_Stacy#/media/File:Gwen_Stacy_(circa_2020).png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Harry Osborn",
+        "description": "Peter Parker's best friend and is Norman Osborn's son. While being true to his comic counterpart, He constantly lives in his father's shadow and considers Peter a good friend, though at times also resents him for earning Norman's approval, which Harry has never been able to do. Being ignored and neglected by his father and overprotective of his mother and just like Peter, he is an unpopular kid at school. With his lack of approval, he is prone to do anything to get it.",
+        "image": "https://en.wikipedia.org/wiki/Harry_Osborn#/media/File:Harry_Osborn.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Green Goblin / Norman Osborn",
+        "description": "The first Green Goblin, Norman Osborn, is the CEO of Oscorp and has powers derived from a \"Goblin formula\" that increases agility, endurance, strength, and reflexes to superhuman levels. The formula has also advances the intelligence while causing insanity as a side effect. He uses an arsenal of weapons created by Oscorp, such as pumpkin bombs and a personal glider. The Norman version of the Green Goblin is usually regarded as Spider-Man's archenemy.[25] The second Goblin, Harry Osborn, is Norman's son and Peter Parker's best friend. He has the same powers as his father.",
+        "image": "https://en.wikipedia.org/wiki/Norman_Osborn#/media/File:Norman_Osborn.jpg",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Dr. Otto Gunther Octavius",
+        "description": "Originally a brilliant scientist, his greatest invention, a set of metallic limbs, became fused to his body by an accident which caused his insanity. He has telepathic control of these arms, which are strong enough to physically hurt Spider-Man.[12] While Doctor Octopus is regarded as one of Spider-Man's archenemies, he also been portrayed as an antihero, and even starred in his own comic book storyline that saw him becoming a superhero called the Superior Spider-Man after the original Spider-Man's death.",
+        "image": "https://en.wikipedia.org/wiki/Doctor_Octopus#/media/File:Dr._Octopus_Marvel.jpg",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Electro",
+        "description": "Originally a lineman for an electric company, he turned to a life of crime after being struck by lightning while working on a power line and becoming a living electric capacitor. His powers range from shooting electricity bolts to flight and superhuman strength and speed, which makes him one of Spider-Man's most dangerous enemies.",
+        "image": "https://en.wikipedia.org/wiki/Electro_(Marvel_Comics)#/media/File:Electro_(Dillon).jpg",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Mysterio",
+        "description": "A master of illusion who uses special effects, hypnosis, and an extensive knowledge of chemistry and robotics to trick his enemies.",
+        "image": "https://en.wikipedia.org/wiki/Mysterio#/media/File:Mysterio.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Sandman",
+        "description": "Once a small-time crook, he became a supervillain after his body merged with sand which he can manipulate in many ways, such as shapeshifting, increasing his density and strength to lift up to 85 tons, and creating dust storms from his body.",
+        "image": "https://en.wikipedia.org/wiki/Sandman_(Marvel_Comics)#/media/File:Sandman_(Marvel_Comics_character).png",
+        "source": "Wikipedia"
+    }
+]
