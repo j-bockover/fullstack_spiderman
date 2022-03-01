@@ -11,6 +11,8 @@ const marvel_public_api_key = process.env.MARVEL_PUBLIC_API_KEY;
 const games_api_key = process.env.GAMES_API_KEY;
 const movie_api_key = process.env.MOVIE_API_KEY;
 
+app.use(express.static("public"));
+
 app.use(express.static(path.join(__dirname, "..", "build")));
 
 app.get("/movies_api", async (req, res) => {
@@ -29,7 +31,6 @@ app.get("/comics_api", async (req, res) => {
 });
 
 app.get("/characters_api", (req, res) => {
-  // res.sendFile(path.join(__dirname, "characters.json"));
   let character_list = getCharacters();
   res.send(character_list);
 });
@@ -153,19 +154,16 @@ async function getComics() {
 
 const all_characters = require("./characters.json");
 
-// console.log(all_characters);
-// console.log(path.join(__dirname, "images", "characters.json"));
 function getCharacters() {
   character_list = [];
   all_characters.forEach((c) => {
     let character = {
       name: c.name,
       description: c.description,
-      image: c.image,
+      image: path.join("images/", c.image),
       source: c.source,
     };
     character_list.push(character);
   });
   return character_list;
 }
-// console.log(getCharacters());
