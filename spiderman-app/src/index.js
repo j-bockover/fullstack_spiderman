@@ -10,6 +10,7 @@ import Media from "./routes/media";
 import Characters from "./routes/characters";
 import News from "./routes/news";
 import Credits from "./routes/credits";
+import Suits from "./routes/suits";
 
 const rootElement = document.getElementById("root");
 
@@ -22,6 +23,7 @@ ReactDOM.render(
       <Route path="media" element={<Media />} />
       <Route path="news" element={<News />} />
       <Route path="credits" element={<Credits />} />
+      <Route path="suits" element={<Suits />} />
     </Routes>
   </BrowserRouter>,
   rootElement
