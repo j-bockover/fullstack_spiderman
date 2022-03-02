@@ -25,20 +25,18 @@ function CharacterList() {
             <div className="col-12 border-top mb-2 pt-2 d-flex">
               <div
                 className="ps-0 pt-0 pe-3 pb-2"
-                style={{ width: "400px", height: "400px" }}
+                // style={{ width: "300px", height: "400px" }}
               >
                 <img
                   className="ps-0 pt-0 pe-3 pb-2"
                   src={character.image}
-                  // width="300px"
-                  // height="400px"
-                  width="auto"
-                  height="100%"
+                  width="300px"
+                  height="400px"
                   alt={character.name + " cover image"}
-                  style={{ objectFit: "fill" }}
+                  style={{ objectFit: "contain" }}
                 ></img>
               </div>
-              <div>
+              <div className="">
                 <h5>{character.name}</h5>
                 <p>Description: {character.description}</p>
                 <p>Source: {character.source}</p>
