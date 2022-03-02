@@ -15,7 +15,7 @@ import Image11 from "../img/penthouse.jfif";
 import Image12 from "../img/game/vortex.gif";
 import { Link } from "react-router-dom";
 
-import "../components/newscomp";
+// import "../components/newscomp";
 
 function News(props) {
   return (
