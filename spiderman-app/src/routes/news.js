@@ -5,6 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Navbar from "../components/navbar";
 import Image from "../img/Dailybugle.jpg";
+import Image2 from "../img/rhino.jfif";
+import Image3 from "../img/kingpin.jfif";
+import Image4 from "../img/amateur.png";
 import Image5 from "../img/gravedust.png";
 import Image6 from "../img/raft.png";
 import Image7 from "../img/vulture1.png";
@@ -141,7 +144,15 @@ function News(props) {
                   margin: `auto`,
                 }}
               >
-                <div class="col-2" id="image4"></div>
+                <div class="col-2">
+                  <img
+                    src={Image2}
+                    class="img-fluid"
+                    // id="image2"
+                    // style={{ width: `400px`, height: `300px` }}
+                    alt="the villain Rhino"
+                  />
+                </div>
                 <div class="col-10">
                   <h2 style={{ fontStyle: `bold`, color: `white` }}>
                     RHINO’S RAMPAGE ROADBLOCKED!
@@ -464,7 +475,15 @@ function News(props) {
                   margin: `auto`,
                 }}
               >
-                <div class="col-2" id="image2"></div>
+                <div class="col-2" id="image2">
+                  <img
+                    src={Image4}
+                    class="img-fluid"
+                    // id="image2"
+                    // style={{ width: `auto`, height: `300px` }}
+                    alt="spiderman"
+                  />
+                </div>
                 <div class="col-10">
                   <h2 style={{ fontStyle: `bold`, color: `white` }}>
                     AMATEUR ARACHNIDS{" "}
@@ -507,14 +526,13 @@ function News(props) {
                   margin: `auto`,
                 }}
               >
-                <div class="col-2" id="image3">
-                  {/* <img
-                      src={Image}
-                      class="img-fluid"
-                      id="image2"
-                      // style={{ width: `400px`, height: `300px` }}
-                      alt="Peter Parker using his newfound powers"
-                    /> */}
+                <div class="col-2">
+                  <img
+                    src={Image3}
+                    class="img-fluid"
+                    // style={{ width: `400px`, height: `300px` }}
+                    alt="The villain Kingpin"
+                  />
                 </div>
                 <div class="col-10">
                   <h2 style={{ fontStyle: `bold`, color: `white` }}>
