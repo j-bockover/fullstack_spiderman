@@ -76,13 +76,19 @@ function Suits(props) {
   var previousTarget = null;
   var delay = 800;
   var game = document.getElementById("root");
+  var heading = document.createElement("h1");
+  var text = document.createTextNode("Spider-Man Suits Memory Game!");
+  heading.appendChild(text);
+  heading.style.color = "white";
+  heading.style.textAlign = "center";
+  game.appendChild(heading);
   var grid = document.createElement("section");
   grid.setAttribute("class", "grid");
   game.appendChild(grid);
   //create link to get back to news page
   var x = document.createElement("a");
   x.href = "../news";
-  x.setAttribute("color", "red");
+  // x.setAttribute("color", "red");
   x.textContent = "RETURN";
   game.appendChild(x);
 
