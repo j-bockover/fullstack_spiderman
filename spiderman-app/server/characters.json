@@ -28,5 +28,77 @@
         "description": "Gwen is the daughter of police captain George Stacy, and is one of Peter Parker's best friends and intellectual equal; they are both recommended by their teacher to work in the lab of Doctor Connors. Although initially strong willed, kind, harboring deep feelings for her best friend Peter and unconcerned with her appearance, she gradually evolves into a more confident and attractive character more closely resembling and truly faithful to her comic book counterpart. She is always supportive of Peter, and also shows well-meaning concern for Harry Osborn. Although she is Peter's best friend, her weakness is that she has a colossal crush on Peter.",
         "image": "gwen-stacy.png",
         "source": "Wikipedia"
+    },
+    {
+        "name": "Harry Osborn",
+        "description": "Peter Parker's best friend and is Norman Osborn's son. While being true to his comic counterpart, He constantly lives in his father's shadow and considers Peter a good friend, though at times also resents him for earning Norman's approval, which Harry has never been able to do. Being ignored and neglected by his father and overprotective of his mother and just like Peter, he is an unpopular kid at school. With his lack of approval, he is prone to do anything to get it.",
+        "image": "harry-osborn.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Green Goblin / Norman Osborn",
+        "description": "The first Green Goblin, Norman Osborn, is the CEO of Oscorp and has powers derived from a \"Goblin formula\" that increases agility, endurance, strength, and reflexes to superhuman levels. The formula has also advances the intelligence while causing insanity as a side effect. He uses an arsenal of weapons created by Oscorp, such as pumpkin bombs and a personal glider. The Norman version of the Green Goblin is usually regarded as Spider-Man's archenemy.[25] The second Goblin, Harry Osborn, is Norman's son and Peter Parker's best friend. He has the same powers as his father.",
+        "image": "norman-osborn.jpg",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Dr. Otto Gunther Octavius",
+        "description": "Originally a brilliant scientist, his greatest invention, a set of metallic limbs, became fused to his body by an accident which caused his insanity. He has telepathic control of these arms, which are strong enough to physically hurt Spider-Man.[12] While Doctor Octopus is regarded as one of Spider-Man's archenemies, he also been portrayed as an antihero, and even starred in his own comic book storyline that saw him becoming a superhero called the Superior Spider-Man after the original Spider-Man's death.",
+        "image": "dr-octavius.jpg",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Electro",
+        "description": "Originally a lineman for an electric company, he turned to a life of crime after being struck by lightning while working on a power line and becoming a living electric capacitor. His powers range from shooting electricity bolts to flight and superhuman strength and speed, which makes him one of Spider-Man's most dangerous enemies.",
+        "image": "electro.jpg",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Mysterio",
+        "description": "A master of illusion who uses special effects, hypnosis, and an extensive knowledge of chemistry and robotics to trick his enemies.",
+        "image": "mysterio.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Sandman",
+        "description": "Once a small-time crook, he became a supervillain after his body merged with sand which he can manipulate in many ways, such as shapeshifting, increasing his density and strength to lift up to 85 tons, and creating dust storms from his body.",
+        "image": "sandman.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Ned Leeds",
+        "description": "Ned Leeds was a reporter for the Daily Bugle. He and Peter Parker compete for the affections of Daily Bugle secretary Betty Brant, but Parker drops out of the running due to realizing that Brant won't be able to accept Spider-Man's double identity. He would win outright when Betty went into stress induced shock after J. Jonah Jameson was attacked at the Daily Bugle by the Scorpion. Leeds and Brant are married shortly after. However, the couple's marriage is often strained. When Spider-Man battles the Hobgoblin, Ned follows the Hobgoblin to a hideout. When the Hobgoblin realizes Ned is present, Ned is captured and brainwashed as a scapegoat in case of being unmasked. Wanting to find out about the Kingpin, Ned approaches Richard Fisk. Discovering that Richard hates the Kingpin, Leeds helps create Richard's secret identity as the Rose. The Hobgoblin manipulates Ned to remove the Kingpin from the scene. Ned's regular brainwashing causes his marriage with Betty and professional relationships to fall apart.",
+        "image": "ned-leeds.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Michelle Jones-Watson",
+        "description": "Michelle Jones-Watson, most commonly known as MJ, is a fictional character portrayed by Zendaya in the Marvel Cinematic Universe (MCU) film franchise, an original character within the media franchise that pays homage to Mary Jane \"MJ\" Watson, a recurring love interest of Spider-Man in comic books and various media. She is depicted as a smart, snarky classmate of Peter Parker in Spider-Man: Homecoming, and becomes his love interest in the sequel Spider-Man: Far From Home, a unique aspect for original characters within the MCU franchise and upon Spider-Man feature films preceding it. She returns in Spider-Man: No Way Home (2021), helping Peter, Ned and Doctor Strange to capture multiple villains that have entered their universe from the multiverse. Her romantic involvement in Peter's personal life would eventually be undone due to Strange's casting of the \"Runes of Kauf-Kaul\", a spell which permanently erased the world's memory of Parker's civilian persona, including the loss of his previous bonds he forged with his friends, loved ones, and allies.",
+        "image": "michelle-jones-watson.jpeg",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Flash Thompson",
+        "description": "Eugene \"Flash\" Thompson is the nephew of actress Lea Thompson and a bully of high school classmate Peter Parker. Flash was physically abused by his alcoholic father Harrison Thompson, leading to Flash's own violent, bullying nature. Thompson dubs Peter with the derogatory nickname \"Puny Parker\" and humiliates Parker daily at school. Not knowing that Parker is Spider-Man, he forms the first \"Spider-Man Fan Club\" and vocally supports his idol, even criticizing J. Jonah Jameson in person for the Daily Bugle's anti-Spider-Man editorials. When Spider-Man is seen committing robberies, Flash is one of the few to stand up for him claiming that he could still be innocent. When it is revealed that Spider-Man was framed by Mysterio, Flash boasts about how he is always right. Peter, who openly states that he would not \"trust [Spider-Man] any further than I can throw him\", takes some secret pleasure in that Flash supported his alter-ego.",
+        "image": "flash-thompson.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "J. Jonah Jameson",
+        "description": "John Jonah Jameson Jr., professionally known simply as J. Jonah Jameson, is a fictional character appearing in American comic books published by Marvel Comics, commonly in association with the superhero Spider-Man. The character was created by writer Stan Lee and artist Steve Ditko, and he first appeared in The Amazing Spider-Man issue #1 (March 1963). Jameson is typically depicted as the publisher or editor-in-chief of the Daily Bugle, a fictional New York City newspaper. Recognizable by his toothbrush moustache, flattop haircut, and ever-present cigar, he carries out a smear campaign against Spider-Man, frequently referring to him as a \"menace\" and a criminal for varying reasons, but occasionally and reluctantly allying with him. In the early comics he employs photojournalist Peter Parker to take pictures of Spider-Man in the hopes of catching him in the middle of wrongdoing, unaware that Peter is the superhero himself. Over the course of the comics, Jameson has done various other jobs, most notably being the Mayor of New York City for several years before resigning.",
+        "image": "j-jonah-jameson.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Kingpin",
+        "description": "One of the most feared, dangerous and powerful crime lords in the Marvel Universe, usually depicted as New York City's crime overlord, he was introduced as an adversary of Spider-Man, but later went on to menace other Marvel heroes, becoming the archenemy of Daredevil,[5] as well as a recurring foe of the Punisher and his adoptive daughter, Echo. The Kingpin's traditional attire consists of his signature white suit jacket and cane, though his appearance has been changed over the years. Across all iterations, the Kingpin is depicted with an extraordinarily heavyset appearance and a bald head. The character is not simply obese but also heavily-muscled (like a sumo wrestler) and a formidable hand-to-hand combatant. While this makes him a dangerous foe to face in person, even to Spider-Man, his size has been regularly mocked.",
+        "image": "kingpin.png",
+        "source": "Wikipedia"
+    },
+    {
+        "name": "Hobgoblin",
+        "description": "The Hobgoblin is the alias of several supervillains appearing in American comic books published by Marvel Comics, most of whom are depicted as enemies of the superhero Spider-Man and belong to the collection of adversaries that make up his rogues gallery. The first and most prominent incarnation is Roderick Kingsley, who made his in-costume debut in The Amazing Spider-Man #238 (March 1983), as a criminal mastermind equipped with Halloween-themed weapons similar to those used by the Green Goblin. Other characters have assumed the mantle over the years, including Lefty Donovan, Jason Macendale, Ned Leeds, Roderick's twin brother Daniel Kingsley and Spider-Man 2211's daughter Robin Borne during the late 1980s and early 1990s, and Phil Urich and Claude in the early 2010s; Lefty, Ned, and Claude were later retroactively established as brainwashed stand-ins of the Kingley brothers' mastermind Hobgoblins, with Macendale, Borne and Urich being the only Hobgoblins to operate independently of the others (although occasionally partnering with them), after respectively killing Ned and Daniel.",
+        "image": "hobgoblin.png",
+        "source": "Wikipedia"
     }
 ]

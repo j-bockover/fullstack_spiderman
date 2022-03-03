@@ -3,6 +3,7 @@ const path = require("path");
 const axios = require("axios");
 const md5 = require("md5");
 const app = express();
+const all_characters = require("./characters.json");
 require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
 
 const port = process.env.PORT || 5001;
@@ -151,8 +152,6 @@ async function getComics() {
 
   return comic_list;
 }
-
-const all_characters = require("./characters.json");
 
 function getCharacters() {
   character_list = [];

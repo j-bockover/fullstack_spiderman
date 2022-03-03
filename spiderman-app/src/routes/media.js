@@ -23,15 +23,15 @@ function MovieList() {
       <div className="container-fluid p-0">
         <div className="row">
           {movies.map((movie) => (
-            <div className="col-md-12 col-lg-6 border-top mb-2 pt-2 d-flex">
+            <div className="col-md-12 col-lg-6 border-top mb-2 pt-2 d-sm-flex">
               <img
-                className="ps-0 pt-0 pe-3 pb-2"
+                className="ps-0 pt-1 pe-3 pb-2"
                 src={movie.image}
                 width="auto"
                 height="300px"
                 alt={movie.title + " poster image"}
               ></img>
-              <div>
+              <div className="pt-1">
                 <h5>{movie.title}</h5>
                 <br />
                 <p>{movie.overview}</p>
@@ -65,14 +65,14 @@ function GameList() {
           {games.map((game) => (
             <div className="col-md-12 col-lg-6 border-top mb-2 pt-2 d-flex">
               <img
-                className="ps-0 pt-0 pe-3 pb-2"
+                className="ps-0 pt-1 pe-3 pb-2"
                 src={game.image}
                 width="250px"
                 height="250px"
                 alt={game.name + " cover image"}
                 style={{ objectFit: "fill" }}
               ></img>
-              <div>
+              <div className="pt-1">
                 <h5>{game.name}</h5>
                 <br />
                 <p>Last update: {game.last_update.split("T")[0]}</p>
@@ -109,14 +109,14 @@ function ComicList() {
           {comics.map((comic) => (
             <div className="col-md-12 col-lg-6 border-top mb-2 pt-2 d-flex">
               <img
-                className="ps-0 pt-0 pe-3 pb-2"
+                className="ps-0 pt-1 pe-3 pb-2"
                 src={comic.image}
                 width="200px"
                 height="300px"
                 alt={comic.name + " cover image"}
                 style={{ objectFit: "fill" }}
               ></img>
-              <div>
+              <div className="pt-1">
                 <h5>{comic.name}</h5>
                 <br />
                 <p>ISBN #: {comic.isbn ? comic.isbn : "None"}</p>

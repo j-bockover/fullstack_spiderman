@@ -22,11 +22,8 @@ function CharacterList() {
       <div className="container-fluid p-0">
         <div className="row">
           {characters.map((character) => (
-            <div className="col-12 border-top mb-2 pt-2 d-flex">
-              <div
-                className="ps-0 pt-0 pe-3 pb-2"
-                // style={{ width: "300px", height: "400px" }}
-              >
+            <div className="col-12 border-top mb-2 pt-2 d-sm-flex">
+              <div className="ps-0 pt-1 pe-3 pb-2">
                 <img
                   className="ps-0 pt-0 pe-3 pb-2"
                   src={character.image}
@@ -36,10 +33,12 @@ function CharacterList() {
                   style={{ objectFit: "contain" }}
                 ></img>
               </div>
-              <div className="">
+              <div className="pt-1">
                 <h5>{character.name}</h5>
-                <p>Description: {character.description}</p>
-                <p>Source: {character.source}</p>
+                <p>{character.description}</p>
+                <p className="fst-italic fw-lighter">
+                  Description &#38; Image Source: {character.source}
+                </p>
               </div>
             </div>
           ))}
