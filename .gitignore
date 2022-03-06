@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /server/node_modules
+/spiderman-app/node_modules
 /.pnp
 .pnp.js
 .env
@@ -12,6 +13,7 @@
 
 # production
 /build
+/spiderman-app/build
 
 # misc
 .DS_Store

@@ -1,0 +1,112 @@
+[
+    {
+      "name": "Marvel Age Spider-Man Vol. 2: Everyday Hero (Digest)",
+      "isbn": "0-7851-1451-3",
+      "pageCount": 96,
+      "creators": [ "Todd Dezago - writer", "Daniel Quantz - writer" ],
+      "image": "4bc665483c3aa.jpg"
+    },
+    {
+      "name": "Amazing Spider-Man: Beyond Vol. 2 (Trade Paperback)",
+      "isbn": "978-1-302-93257-2",
+      "pageCount": 152,
+      "creators": [
+        "Saladin Ahmed - writer",
+        "Patrick Gleason - writer",
+        "Cody Ziglar - writer"
+      ],
+      "image": "6218ebd24f446.jpg"
+    },
+    {
+      "name": "Non-Stop Spider-Man: Big Brain Play (Trade Paperback)",
+      "isbn": "978-1-302-92748-6",
+      "pageCount": 128,
+      "creators": [ "Joe Kelly - writer" ],
+      "image": "61cf54d9241c5.jpg"
+    },
+    {
+      "name": "Marvel Masterworks: The Spectacular Spider-Man Vol. 4 (Hardcover)",
+      "isbn": "978-1-302-92943-5",
+      "pageCount": 328,
+      "creators": [
+        "Ralph Macchio - writer",
+        "Bill Mantlo - writer",
+        "Roger Stern - writer",
+        "Marv Wolfman - writer"
+      ],
+      "image": "61a8fec09d3c8.jpg"
+    },
+    {
+      "name": "Spider-Men: Worlds Collide (Trade Paperback)",
+      "isbn": "978-1-302-93197-1",
+      "pageCount": 240,
+      "creators": [ "Brian Michael Bendis - writer" ],
+      "image": "61a6fb6236633.jpg"
+    },
+    {
+      "name": "W.E.B. Of Spider-Man (Trade Paperback)",
+      "isbn": "978-1-302-92306-8",
+      "pageCount": 112,
+      "creators": [ "Kevin Shinick - writer" ],
+      "image": "619ba9ce225dd.jpg"
+    },
+    {
+      "name": "Amazing Spider-Man Epic Collection: Lifetheft (Trade Paperback)",
+      "isbn": "978-1-302-93069-1",
+      "pageCount": 488,
+      "creators": [
+        "Tom Brevoort - writer",
+        "J.M. DeMatteis - writer",
+        "Eric Fein - writer",
+        "Mike Kanterovich - writer",
+        "Terry Kavanagh - writer",
+        "Mike Lackey - writer"
+      ],
+      "image": "618ee142b9a1e.jpg"
+    },
+    {
+      "name": "Amazing Spider-Man by Nick Spencer Vol. 15: What Cost Victory? (Trade Paperback)",
+      "isbn": "978-1-302-92608-3",
+      "pageCount": 176,
+      "creators": [ "Nick Spencer - writer" ],
+      "image": "618ee142bfc97.jpg"
+    },
+    {
+      "name": "Untold Tales Of Spider-Man: The Complete Collection Vol. 1 (Trade Paperback)",
+      "isbn": "978-1-302-93177-3",
+      "pageCount": 400,
+      "creators": [
+        "Kurt Braunohler - writer",
+        "Kurt Busiek - writer",
+        "Jeph York - writer"
+      ],
+      "image": "618ee12ee3919.jpg"
+    },
+    {
+      "name": "Marvel-Verse: Spider-Man (Trade Paperback)",
+      "isbn": "978-1-302-93215-2",
+      "pageCount": 120,
+      "creators": [
+        "Erica David - writer",
+        "Steve Ditko - writer",
+        "Paul Jenkins - writer",
+        "Stan Lee - writer",
+        "Jeph York - writer"
+      ],
+      "image": "618ee12ee3b34.jpg"
+    },
+    {
+      "name": "Mighty Marvel Masterworks: The Amazing Spider-Man Vol. 1: With Great Power… (Trade Paperback)",
+      "isbn": "978-1-302-92977-0",
+      "pageCount": 256,
+      "creators": [ "Stan Lee - writer" ],
+      "image": "61770d46b8585.jpg"
+    },
+    {
+      "name": "Amazing Spider-Man Epic Collection: The Death Of Captain Stacy (Trade Paperback)",
+      "isbn": "978-1-302-92908-4",
+      "pageCount": 440,
+      "creators": [ "Stan Lee - writer", "Roy Thomas - writer" ],
+      "image": "616dda62460e5.jpg"
+    }
+  ]

@@ -1,14 +1,12 @@
 const express = require("express");
 const path = require("path");
 const axios = require("axios");
-const md5 = require("md5");
 const app = express();
 const all_characters = require("./characters.json");
+const all_comics = require("./comics.json");
 require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
 
 const port = process.env.PORT || 5001;
-const marvel_private_api_key = process.env.MARVEL_PRIVATE_API_KEY;
-const marvel_public_api_key = process.env.MARVEL_PUBLIC_API_KEY;
 const games_api_key = process.env.GAMES_API_KEY;
 const movie_api_key = process.env.MOVIE_API_KEY;
 
@@ -115,41 +113,18 @@ async function getGames() {
   return game_list;
 }
 
-async function getComics() {
-  let timestamp = `${new Date()}`;
-  let hash = md5(timestamp + marvel_private_api_key + marvel_public_api_key);
-  let comic_list = [];
-
-  let api_url = `http://gateway.marvel.com/v1/public/comics?characters=1009610&limit=50&ts=${timestamp}&apikey=${marvel_public_api_key}&hash=${hash}`; // found Spider-Man (Peter Parker) id = 1009610
-
-  try {
-    let response = await axios.get(api_url);
-
-    let {
-      data: { results },
-    } = response.data;
-
-    let withISBN = results.filter((result) => result.isbn != "");
-
-    withISBN.forEach((result) => {
-      let comic = {
-        name: result.title,
-        isbn: result.isbn,
-        pageCount: result.pageCount,
-        creators: [],
-        image: result.thumbnail.path + "." + result.thumbnail.extension,
-      };
-      result.creators.items
-        .filter((creator) => creator.role === "writer")
-        .forEach((creator) =>
-          comic.creators.push(creator.name + " - " + creator.role)
-        );
-      comic_list.push(comic);
-    });
-  } catch (error) {
-    console.error(error);
-  }
-
+function getComics() {
+  comic_list = [];
+  all_comics.forEach((c) => {
+    let comic = {
+      name: c.name,
+      isbn: c.isbn,
+      pageCount: c.pageCount,
+      creators: c.creators,
+      image: path.join("images/", c.image),
+    };
+    comic_list.push(comic);
+  });
   return comic_list;
 }
 
