@@ -4,6 +4,14 @@
 
 ### Works Cited:
 
+https://levelup.gitconnected.com/how-to-render-react-app-using-express-server-in-node-js-a428ec4dfe2b
+
+https://www.themoviedb.org/?language=en-US
+
+https://developer.marvel.com/
+
+https://rawg.io/apidocs
+
 https://media.istockphoto.com/vectors/-vector-id1165735224?k=20&m=1165735224&s=612x612&w=0&h=0vpe5z-43mGHj-HwAM-HY3bCZsZEpJFMQpA_FYwuZww=
 
 https://cdn.vox-cdn.com/thumbor/Sfkvc3-Jb32Bj__n8fMhsu8keko=/0x0:1600x900/1200x800/filters:focal(672x322:928x578)/cdn.vox-cdn.com/uploads/chorus_image/image/67762052/marvels_spiderman_remastered_screenshot_01_disclaimer_en_01oct20.0.png
