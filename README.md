@@ -42,7 +42,7 @@ https://developer.marvel.com/
 
 https://rawg.io/apidocs
 
-### Works Cited:
+### Works Cited
 
 https://media.istockphoto.com/vectors/-vector-id1165735224?k=20&m=1165735224&s=612x612&w=0&h=0vpe5z-43mGHj-HwAM-HY3bCZsZEpJFMQpA_FYwuZww=
 
