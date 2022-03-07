@@ -2,15 +2,47 @@
 
 ## Spider-Man Website Final Project by Jason Bockover and Mina Vu
 
-### Works Cited:
+### Why We Built This App
+
+This site will offer information about the Spider-Man story, characters, media appearances, and news for anyone interested in learning more about Spider-Man.
+We wanted to create this site because we both like Spider-Man and the character is more popular today than ever before thanks to the recent Marvel movies. 
+
+### Features We Implemented
+
+- Eye-catchy landing page
+- Origin story of Spider-Man
+- Info about characters from the Spider-Man universe
+- Different types of media that Spider-Man has appeared in 
+- Spider-Man news courtesy of the Daily Bugle
+- Suit matching game for entertainment
+
+### The Stack, Libraries, Framework
+
+- HTML/CSS/JS
+- Bootstrap Framework
+- React Library
+- Express Framework
+
+### How To Run The App
+
+- Clone this public repo to a local repository
+- Run npm install inside the cloned directory to install all dependencies
+- Run npm start to start the Express server
+- Use a browser to access the app at the port for localhost
+
+### Tutorials We Used
 
 https://levelup.gitconnected.com/how-to-render-react-app-using-express-server-in-node-js-a428ec4dfe2b
+
+### Third-Party APIs
 
 https://www.themoviedb.org/?language=en-US
 
 https://developer.marvel.com/
 
 https://rawg.io/apidocs
+
+### Works Cited:
 
 https://media.istockphoto.com/vectors/-vector-id1165735224?k=20&m=1165735224&s=612x612&w=0&h=0vpe5z-43mGHj-HwAM-HY3bCZsZEpJFMQpA_FYwuZww=
 
