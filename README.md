@@ -29,6 +29,7 @@ We wanted to create this site because we both like Spider-Man and the character 
 - Run npm install inside the cloned directory to install all dependencies
 - Run npm start to start the Express server
 - Use a browser to access the app at the port for localhost
+- Note that the media page requires API keys to get data from third-party APIs, so clones will not see all contents
 
 ### Tutorials We Used
 
